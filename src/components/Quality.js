@@ -9,7 +9,7 @@ function Quality() {
                 <h1>Artesanato de Alta Qualidade</h1>
                 <p>Artesanato é o próprio trabalho manual, utilizando-se de matéria-prima natural <br/>ou produção de um artesão.</p>
             </div>
-            <img className='About-img' src={quality}>
+            <img className='About-img' alt="quality" src={quality}>
             </img>
         </section>
     )
