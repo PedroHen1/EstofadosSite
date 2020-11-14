@@ -10,7 +10,7 @@ function Home () {
             <div className='Home-container'>
                 <div className='Home-card'>
                     <h3>Faça um orçamento</h3>
-                    <p><a href='#'>Contato</a></p>
+                    <p><a href='#Contact'>Contato</a></p>
                 </div>
             <h1>Estofado</h1>
                 <img src={HomeImg} className='img-fluid'></img>

@@ -14,7 +14,7 @@ function Choose() {
                             <h2>
                                 Melhor estofamento da regiao.
                             </h2>
-                            <a href='Contact'>CONTATO</a>
+                            <a href='#Contact'>CONTATO</a>
                         </div>
                         <div className='Choose-right'>
                             <h3>Veja os diversos motivos pelo qual nos destacamos no mercado.</h3>

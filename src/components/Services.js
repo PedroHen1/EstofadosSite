@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Row, Col, Body } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 import Forniture from '../img/mobilia.jpeg'
 import Automotive from '../img/automoveis.jpeg'
 import Commercial from '../img/comercio.jpeg'
