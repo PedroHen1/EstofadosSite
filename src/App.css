@@ -1,38 +1,408 @@
-.App {
-  text-align: center;
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*NAVBAR*/
+.Nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px 10%;
+    color: #171717;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 6vh;
+}    
+.Nav-bar h2 {
+    padding-top: 5px;
+    font-size: 27px; 
+}
+.Nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.Nav-bar ul li a {
+    margin-right: 50px;
+    color: #171717;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Nav-bar i {
+    display: none;
+    cursor: pointer;
+}    
+
+/*HOME*/
+.Home {
+    background-color: #1b1b1fe7;
+    z-index: 999;
+    height: 100vh;
+}
+.Home-container img{
+    margin-top: 100px;
+    width: 80%;
+    filter: brightness(50%);
+}
+.Home-container h1 {
+    color: white;
+    position: absolute;
+    margin-top: 20%;
+    left: 25%;
+    transform: translateX(-25%);
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;
+    z-index: 1;
+}
+.Home-card {
+    box-sizing: border-box;
+    background: #eee3d0;
+    width: 30%;
+    position: absolute;
+    margin-top: 70px;
+    z-index: 1;
+    height: 20%;
+    padding: 35px 4%;
+}
+.Home-card h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.Home-card a {
+    font-size: 18px;
+    color: #171717;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*SERVICES*/
+.Services-container{
+    margin-top: 230px;
+    text-align: right;
+}
+.Services-container h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    color: #ad8b6a;
+}
+.Services-container .Title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-90%);
+}
+.Services-img {
+    filter: brightness(50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*RECOMMENDATION*/
+.Recommendation {
+    margin-top: 20px;
+}
+.Carousel-item img{
+    height: 70vh;
+    width: 0;
+}
+.Carousel-caption h3{
+    font-family: serif;
+    color: #111111;
+}
+.Carousel-caption p {
+    color: #ad8b6a;
+    font-family: 'Poppins', sans-serif;
+}
+.Carousel-caption h1 {
+    margin-top: -350px;
+    color: #111111;
+    font-family: monospace;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    transform: rotate(-180deg);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px;
+  width: 60px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 35px;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: #000000;
 }
+.carousel-indicators li{
+    background-color: #111111;
+}
+.carousel-indicators .active{
+    background-color: #111111;
+}
+
+/*QUALITY*/
+.About {
+    height: 100vh;
+    margin-top: 50px;
+    text-align: center;
+}
+.About-img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+    background-attachment: fixed;
+}
+.About-txt {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+    margin: 200px 0px;
+}
+.About h3{
+    padding-top: 100px;
+    font-size: 18px;
+    z-index: 1;
+    color: #d8b087;
+    font-family: 'Poppins', sans-serif;
+}
+.About h1{
+    color: #fff;
+    font-size: 3.5rem;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+.About p {
+    color: #818181;
+    font-size: 17px;
+}
+
+/*Choose us*/
+.Choose {
+    margin: 150px 0px;
+}
+.Choose-container {
+    background-color: #2a2a2e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 40px;
+}
+.Choose-container h5{
+    color: #ad8b6a;
+}
+.Choose-container h2 {
+    font-family: 'Playfair Display', serif;
+}
+.Choose-container a{
+    position: absolute;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #ad8b6a;
+    padding: 15px 25px;
+    border: 1px solid #ad8b6a;
+    text-decoration: none;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+.Choose-container a:hover {
+    background-color: #ad8b6a;
+    color: #fff;
+}
+.Choose-container h3{
+    color: rgba(231, 231, 231, 0.171);
+}
+.Choose-container ul {
+    padding-left: 20px;
+}
+.Choose-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/*CONTATO*/
+.Contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Contact-left {
+    background: #080808;
+    height: 90vh;
+    color: #fff;
+}
+.Contact-left div {
+    position: absolute;
+    left: 15%;
+    padding: 130px 0px;
+}
+.Contact-left h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+.Contact-left h3 {
+    color: #ad8b6a;
+    font-family: serif;
+}
+.Contact-left h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.Contact-left h6 {
+    color: #303030;
+}
+.Contact-right {
+    background-image: url(./img//teste3.jpeg);
+    background-size: cover;
+}
+.Contact-right div {
+    position: absolute;
+    padding: 100px 0px;
+    left: 4%
+}
+
+/*COPY*/
+.Copy {
+    background: #131313;
+    height: 8vh;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.Copy h5 {
+    color: #3a3a3a;
+    margin-top: 15px;
+}
+/*resposive*/
+@media (min-width: 992px) {
+    .Nav-bar ul {
+        transform: translateX(0px) !important;
+    }
+}
+@media (max-width: 1200px) {
+    .Services-container{
+        margin-top: 30px;
+        text-align: right;
+    }
+}
+@media (max-width: 992px){
+    .Nav-bar ul {
+        display: flex;
+        background: #fff;
+        left: 0;
+        top: 20px;
+        padding: 100px 0px;
+        text-align: center;
+        height: 190vh;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        transform: translateX(-6000px);
+        transition: 0.4s;
+    }
+    .Nav-bar ul li {
+        margin-top: 50px;
+    }
+    .Nav-bar ul li a {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-right: 0px;
+    }
+    .Nav-bar ul li a:hover {
+        border-bottom: 2px solid #000;
+    }
+    .Nav-bar i {
+        display: block;
+        margin-top: 8px;
+        font-size: 25px;
+    }
+    .Home-container h1{
+        font-size: 8rem;
+    }
+    .Home-card {
+        width: 45%;
+    }
+    .Home-card h3 {
+        font-size: 20px;
+    }
+    .Services-container{
+        text-align: right;
+    }
+    .Services-container h1{
+        font-size: 6rem;
+    }
+    .Contact-container {
+        grid-template-columns: 1fr;
+    }
+    .Contact-left {
+        height: 60vh;
+    }
+    .Contact-left div {
+        padding: 70px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .Home-container h1{
+        font-size: 6rem;
+    }
+    .Home-card {
+        width: 45%;
+        height: 15%;
+    }
+    .Home-card h3 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .Home-card a {
+        font-size: 13px;
+    }
+    .Services-container h1{
+        font-size: 5rem;
+    }
+    .Choose-container {
+        grid-template-columns: 1fr;
+    }
+    .Choose-container h3 {
+        margin: 20px 0px;
+    }
+    .Choose-container a {
+        bottom: 0;
+        padding: 10px 15px;
+        margin-bottom: 40px;
+    }
+    .Home-container h1 {
+        transform: rotate(-90deg);
+        margin-left: -200px;
+        margin-top: 400px;
+    }
+}
+@media (max-width: 526px) {
+    .Home-card {
+        width: 50%;
+    }
+    .Home-card h3 {
+        font-size: 13px;
+    }
+    .Services-container h1{
+        font-size: 4rem;
+    }
+}
+
