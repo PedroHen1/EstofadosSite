@@ -12,7 +12,7 @@ function Navbar (){
             </h2>
             <div className='Nav-menu'>
                 <ul style={{transform: click ? "translateX(0px)" : "translateX(-6000px)"}}>
-                    <li><a onClick={handleClick}  href='#'>Home</a></li>
+                    <li><a onClick={handleClick}  href='#Home'>Home</a></li>
                     <li><a onClick={handleClick} href='#Services'>Servicos</a></li>
                     <li><a onClick={handleClick} href='#Choose'>Sobre</a></li>
                     <li><a onClick={handleClick} href='#Contact'>Contato</a></li>

@@ -5,7 +5,7 @@ import HomeImg from '../img/home-img.jpeg'
 
 function Home () {
     return(
-        <section className='Home'>
+        <section id="Home" className='Home'>
             <Navbar />
             <div className='Home-container'>
                 <div className='Home-card'>
