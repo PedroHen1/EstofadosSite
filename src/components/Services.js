@@ -13,7 +13,7 @@ function Services() {
                 <Row>
                     <Col md={12} lg={6}>
                         <Card className='mb-4'>
-                            <Card.Img className='Services-img' variant="top" src={Forniture} />
+                            <Card.Img className='Services-img' variant="top" alt="forniture" src={Forniture} />
                             <Card.ImgOverlay>
                                 <Card.Title className='Title'>
                                 Mobília
@@ -24,7 +24,7 @@ function Services() {
 
                     <Col sm={12} lg={6}>
                         <Card className='mb-4'>
-                            <Card.Img className='Services-img' variant="top" src={Automotive} />
+                            <Card.Img className='Services-img' variant="top" alt="automotive" src={Automotive} />
                             <Card.ImgOverlay>
                                 <Card.Title className='Title'>
                                 Automotivo
@@ -35,7 +35,7 @@ function Services() {
 
                     <Col sm={12} lg={6}>
                         <Card className='mb-4'>
-                            <Card.Img className='Services-img' variant="top" src={Commercial} />
+                            <Card.Img className='Services-img' variant="top" alt="commercial" src={Commercial} />
                             <Card.ImgOverlay>
                                 <Card.Title className='Title'>
                                 Comercial
@@ -46,7 +46,7 @@ function Services() {
 
                     <Col sm={12} lg={6}>
                         <Card className='mb-4'>
-                            <Card.Img className='Services-img' variant="top" src={Pillows} />
+                            <Card.Img className='Services-img' variant="top" alt="pillows" src={Pillows} />
                             <Card.ImgOverlay>
                                 <Card.Title className='Title'>
                                 Travesseiros<br />Colchoes

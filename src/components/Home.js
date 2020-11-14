@@ -13,7 +13,7 @@ function Home () {
                     <p><a href='#Contact'>Contato</a></p>
                 </div>
             <h1>Estofado</h1>
-                <img src={HomeImg} className='img-fluid'></img>
+                <img src={HomeImg} alt="Background" className='img-fluid'></img>
             </div>
         </section>
     )
